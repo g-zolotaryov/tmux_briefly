@@ -1,6 +1,8 @@
-<p>ќчень удобный способ запустить tmux:<br /> <strong><code>tmux attach || tmux new</code></strong> - дела€ так, вы сперва пытаетесь подключитьс€ к уже существующему серверу <strong>tmux</strong>, если он существует; если такого ещЄ нет - создаЄте новый.<br /> </p>
-<p>ѕосле этого вы попадаете в полноценную консоль.<br /> <strong>Ctrl+b d</strong> - отключитьс€. (“очно так же вы отключитесь, если прервЄтс€ соединение.  ак подключитьс€ обратно и продолжить работу - см. выше.)<br /> <br /> ¬ одной сессии может быть сколько угодно окошек:<br /> </p>
-<table width="100%" cellspacing="0" cellpadding="4">
+<p>ќчень удобный способ запустить tmux:<br /> </p>
+<p><strong>tmux attach || tmux new</strong></p>
+<p>дела€ так, вы сперва пытаетесь подключитьс€ к уже существующему серверу <strong>tmux</strong>, если он существует; если такого ещЄ нет - создаЄте новый.</p>
+<p>ѕосле этого вы попадаете в полноценную консоль.<br /> <strong>Ctrl+b d</strong> - отключитьс€. (“очно так же вы отключитесь, если прервЄтс€ соединение.  ак подключитьс€ обратно и продолжить работу - см. выше.)<br /> <br /> ¬ одной сессии может быть сколько угодно окошек:</p>
+<table width="100%">
 <tbody>
 <tr>
 <td width="15%">
@@ -47,13 +49,13 @@
 <p><strong>Ctrl+b &amp;</strong></p>
 </td>
 <td width="85%">
-<p>закрыть окошко (а можно просто набрать <strong><code>exit</code></strong> в терминале)</p>
+<p>закрыть окошко (а можно просто набрать exit в терминале)</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p><br /> ¬ одном окошке может быть много панелей:</p>
-<table width="100%" cellspacing="0" cellpadding="4">
+<table width="100%">
 <tbody>
 <tr>
 <td width="15%">
@@ -84,15 +86,13 @@
 <p><strong>Ctrl+b x</strong></p>
 </td>
 <td width="85%">
-<p>закрыть панель (а можно просто набрать <strong><code>exit</code></strong> в терминале)</p>
+<p>закрыть панель (а можно просто набрать exit в терминале)</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p><br /> Ќедостаток - непривычным становитс€ скроллинг:<br /> <strong>Ctrl+b PgUp</strong> - вход в &laquo;режим копировани€&raquo;, после чего:<br /> PgUp, PgDown - скроллинг;<br /> q - выход из &laquo;режима копировани€&raquo;.</p>
-<p>ѕрив€зки клавиш дл€ различных команд могут быть изменены в <strong>tmux.conf</strong>. </p>
+<p>ѕрив€зки клавиш дл€ различных команд могут быть изменены в <strong>tmux.conf</strong>.</p>
 <p>Ќапример, модификатор управлени€ Ctrl-b может быть изменен на Ctrl-a после добавлени€ следующих команд в конфигурационном файле:</p>
-<pre><strong>unbind C-b</strong>
-<strong>set -g prefix C-a</strong>
-<strong>bind C-a send-prefix</strong>
-</pre>
+<p><strong>unbind C-b</strong> <strong>set -g prefix C-a</strong> <strong>bind C-a send-prefix</strong></p>
+<p>Edited with <a href="http://html5-editor.net/">HTML Composer</a>. Please <a href="http://htmlg.com/license/">purchase a HTMLG license</a> to remove this message.</p>
